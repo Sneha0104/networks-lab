@@ -1,9 +1,1 @@
- gcc -pthread -o client client.c
- chmod +x client.c
- ./client user_name 
-
- // for multiple users multiple terminals
-
-  gcc -pthread -o server server.c
- chmod +x server.c
- ./server
+ https://www.ktustudents.in/2017/12/cs334-network-programming-lab-syllabus-s6-cse.html
