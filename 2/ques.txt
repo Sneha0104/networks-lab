@@ -1,0 +1,26 @@
+// To familiarize and understand the use and functioning of System Calls used for Operating system
+and network programming in Linux.
+
+In computing, a system call is the programmatic way in which a computer program requests a service 
+from the kernel of the operating system it is executed on. System call provides the services of 
+the operating system to the user programs via Application Program Interface(API).
+
+Services Provided by System Calls :
+
+    Process creation and management
+    Main memory management
+    File Access, Directory and File system management
+    Device handling(I/O)
+    Protection
+    Networking, etc.
+
+Types of System Calls : There are 5 different categories of system calls –
+
+
+    Process control: end, abort, create, terminate, allocate and free memory. Eg:fork(),exit(),wait()
+    File management: create, open, close, delete, read file etc. Eg: open(), read(), write(),close()
+    Device management : Eg: ioctl(), read(), write()
+    Information maintenance: Eg: getpid(), alarm(), sleep()
+    Communication: Eg: pipe(), shmget() ,mmap()
+
+

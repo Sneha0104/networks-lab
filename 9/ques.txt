@@ -1,11 +1,22 @@
 Implement a multi user chat server using TCP as transport layer protocol.
 
+//To run open more than two terminal
+//One for server
+//Two for client
+
+//client
 gcc -pthread -o client client.c
- chmod +x client.c
- ./client user_name 
+chmod +x client.c
+./client user_name 
 
- // for multiple users multiple terminals
-
-  gcc -pthread -o server server.c
+ 
+//server
+gcc -pthread -o server server.c
  chmod +x server.c
  ./server
+
+
+on a connection request, the server modifies the array of client using mutex lock, so that it won't be updated concurrently. and on receive message, the message is read and the send to all the client using the sendtoall()
+on the client side also two threads, but here one to send message and one to receive message
+it's not two thread on server, it's a thread per client. on receiving a message, the thread of the corresponding client sends the message to all other clients using the array of clients
+on connection, a thread is created for the each client
