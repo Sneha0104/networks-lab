@@ -1,0 +1,9 @@
+ gcc -pthread -o client client.c
+ chmod +x client.c
+ ./client user_name 
+
+ // for multiple users multiple terminals
+
+  gcc -pthread -o server server.c
+ chmod +x server.c
+ ./server
