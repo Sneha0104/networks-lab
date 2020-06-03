@@ -22,5 +22,6 @@ Types of System Calls : There are 5 different categories of system calls –
     Device management : Eg: ioctl(), read(), write()
     Information maintenance: Eg: getpid(), alarm(), sleep()
     Communication: Eg: pipe(), shmget() ,mmap()
+    Protection: Eg: chmod(),unmask(),chown()
 
 
